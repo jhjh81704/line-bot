@@ -45,6 +45,7 @@ def handle_message(event):
         r = 'hi'
     elif msg = '你吃飯了嗎':
         r = '還沒'
+        
     line_bot_api.reply_message(
         event.reply_token,
         TextSendMessage(text= r))
